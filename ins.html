@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscription - ÉcoVie</title>
+
+    <link rel="stylesheet" href="insc.css">
+</head>
+
+<body>
+
+<div class="register-container">
+
+    <div class="register-image">
+
+        <div class="overlay">
+
+            <a href="index.html" class="logo">
+                ÉcoVie
+            </a>
+
+            <div class="image-content">
+
+                <h1>Rejoignez ÉcoVie</h1>
+
+                <p>
+                    Ensemble, protégeons notre environnement
+                    et construisons un avenir plus vert.
+                </p>
+
+                <div class="benefits">
+
+                    <div>
+                        <span>✓</span>
+                        Participez à nos projets écologiques
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Recevez nos actualités
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Suivez votre engagement
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Rejoignez notre communauté
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="register-section">
+
+        <div class="register-box">
+
+            <div class="mobile-logo">
+                <a href="index.html">ÉcoVie</a>
+            </div>
+
+            <h2>Créer un compte</h2>
+
+            <p class="subtitle">
+                Rejoignez notre communauté écologique
+            </p>
+
+
+            <form action="inscription.php" method="POST">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="nom">
+                            Nom
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nom"
+                            name="nom"
+                            placeholder="Votre nom"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="postnom">
+                            Postnom
+                        </label>
+
+                        <input
+                            type="text"
+                            id="postnom"
+                            name="postnom"
+                            placeholder="Votre postnom"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="prenom">
+                        Prénom
+                    </label>
+
+                    <input
+                        type="text"
+                        id="prenom"
+                        name="prenom"
+                        placeholder="Votre prénom"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Adresse email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemple@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="telephone">
+                        Téléphone
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telephone"
+                        name="telephone"
+                        placeholder="+243 ..."
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="ville">
+                        Ville
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ville"
+                        name="ville"
+                        placeholder="Ex : Kinshasa"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="participation">
+                        Je souhaite participer comme
+                    </label>
+
+                    <select
+                        id="participation"
+                        name="participation"
+                        required
+                    >
+
+                        <option value="">
+                            Sélectionnez une option
+                        </option>
+
+                        <option value="benevole">
+                            Bénévole
+                        </option>
+
+                        <option value="donateur">
+                            Donateur
+                        </option>
+
+                        <option value="partenaire">
+                            Partenaire
+                        </option>
+
+                        <option value="membre">
+                            Membre
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Mot de passe
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Minimum 8 caractères"
+                        minlength="8"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirm_password">
+                        Confirmer le mot de passe
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirm_password"
+                        name="confirm_password"
+                        placeholder="Confirmez votre mot de passe"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="checkbox-group">
+
+                    <input
+                        type="checkbox"
+                        id="conditions"
+                        name="conditions"
+                        value="1"
+                        required
+                    >
+
+                    <label for="conditions">
+
+                        J'accepte les conditions d'utilisation
+                        et la politique de confidentialité.
+
+                    </label>
+
+                </div>
+
+
+                <button type="submit">
+                    Créer mon compte
+                </button>
+
+            </form>
+
+
+            <div class="login-link">
+
+                Vous avez déjà un compte ?
+
+                <a href="connexion.html">
+                    Se connecter
+                </a>
+
+            </div>
+
+
+            <div class="back-home">
+
+                <a href="index.html">
+                    ← Retour à l'accueil
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

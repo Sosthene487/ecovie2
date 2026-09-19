@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #f4f8f5;
+    color: #1f2937;
+}
+
+
+/* =========================================
+   CONTENEUR PRINCIPAL
+========================================= */
+
+.register-container {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* =========================================
+   PARTIE IMAGE
+========================================= */
+
+.register-image {
+    width: 45%;
+    min-height: 100vh;
+
+    background-image:
+        url("../images/reboisement.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+
+.overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(10, 70, 40, 0.88),
+            rgba(25, 135, 84, 0.60)
+        );
+
+    padding: 40px;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+.image-content {
+    max-width: 500px;
+
+    margin-bottom: 80px;
+}
+
+
+.image-content h1 {
+    font-size: 46px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+
+.image-content p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   AVANTAGES
+========================================= */
+
+.benefits {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+.benefits div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 15px;
+}
+
+
+.benefits span {
+    width: 26px;
+
+    height: 26px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    border-radius: 50%;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   PARTIE FORMULAIRE
+========================================= */
+
+.register-section {
+    width: 55%;
+
+    min-height: 100vh;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 50px 70px;
+}
+
+
+.register-box {
+    width: 100%;
+
+    max-width: 650px;
+}
+
+
+/* =========================================
+   LOGO MOBILE
+========================================= */
+
+.mobile-logo {
+    display: none;
+
+    margin-bottom: 25px;
+}
+
+
+.mobile-logo a {
+    color: #198754;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   TITRE
+========================================= */
+
+.register-box h2 {
+    font-size: 32px;
+
+    color: #17221b;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+    color: #6b7280;
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FORMULAIRE
+========================================= */
+
+form {
+    width: 100%;
+}
+
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+
+    margin-bottom: 8px;
+}
+
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d9e0dc;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #1f2937;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #198754;
+
+    box-shadow:
+        0 0 0 3px rgba(25, 135, 84, 0.10);
+}
+
+
+/* SELECT */
+
+.form-group select {
+    cursor: pointer;
+
+    appearance: auto;
+}
+
+
+/* =========================================
+   CASE CONDITIONS
+========================================= */
+
+.checkbox-group {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin: 8px 0 22px;
+}
+
+
+.checkbox-group input {
+    width: 17px;
+
+    height: 17px;
+
+    margin-top: 2px;
+
+    accent-color: #198754;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+
+.checkbox-group label {
+    color: #6b7280;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   BOUTON
+========================================= */
+
+button {
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #198754;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+button:hover {
+    background: #146c43;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 18px rgba(25, 135, 84, 0.20);
+}
+
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   LIEN CONNEXION
+========================================= */
+
+.login-link {
+    text-align: center;
+
+    margin-top: 22px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.login-link a {
+    color: #198754;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    margin-left: 4px;
+}
+
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RETOUR ACCUEIL
+========================================= */
+
+.back-home {
+    text-align: center;
+
+    margin-top: 18px;
+}
+
+
+.back-home a {
+    color: #6b7280;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.2s ease;
+}
+
+
+.back-home a:hover {
+    color: #198754;
+}
+
+
+/* =========================================
+   RESPONSIVE TABLETTE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .register-image {
+        width: 40%;
+    }
+
+    .register-section {
+        width: 60%;
+
+        padding: 40px;
+    }
+
+    .overlay {
+        padding: 30px;
+    }
+
+    .image-content h1 {
+        font-size: 36px;
+    }
+
+    .image-content p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .register-container {
+        display: block;
+    }
+
+
+    .register-image {
+        display: none;
+    }
+
+
+    .register-section {
+        width: 100%;
+
+        min-height: 100vh;
+
+        padding: 35px 22px;
+
+        align-items: flex-start;
+    }
+
+
+    .register-box {
+        max-width: 600px;
+
+        margin: auto;
+    }
+
+
+    .mobile-logo {
+        display: block;
+    }
+
+
+    .register-box h2 {
+        font-size: 28px;
+    }
+
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+}
+
+
+/* =========================================
+   PETITS ÉCRANS
+========================================= */
+
+@media (max-width: 450px) {
+
+    .register-section {
+        padding: 25px 18px;
+    }
+
+
+    .mobile-logo a {
+        font-size: 27px;
+    }
+
+
+    .register-box h2 {
+        font-size: 25px;
+    }
+
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+
+    .form-group input,
+    .form-group select {
+        height: 46px;
+    }
+
+
+    button {
+        height: 48px;
+    }
+
+}
